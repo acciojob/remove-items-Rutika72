@@ -1,5 +1,9 @@
 //your JS code here. If required.
-function removeColor() {
-    const dropdown = document.getElementById("colorSelect");
-    dropdown.remove(dropdown.selectedIndex);
+let select = document.getElementById("colorSelect");
+let button = document.querySelector('input[type="button"]');
+button.addEventListener("click", () => {
+let selectedIndex = select.selectedIndex;
+if(selectedIndex !== -1){
+select.remove(selectedIndex);
 }
+})
